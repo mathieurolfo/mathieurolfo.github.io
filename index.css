@@ -15,6 +15,10 @@
 	font-size: 36px;
 }
 
+p {
+	color: white;
+}
+
 body {
 	background: black;
 }

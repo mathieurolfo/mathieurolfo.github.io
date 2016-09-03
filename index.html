@@ -1,23 +1,20 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+	<div id="container">
+		<div id="name">Mathieu Rolfo</div>
+		<img id="brain" src="brain.gif"></img>
+	</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</body>
+</html>
