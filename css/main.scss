@@ -12,7 +12,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+// $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -37,3 +37,5 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+@import
+	"layout"
