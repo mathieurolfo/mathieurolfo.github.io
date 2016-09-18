@@ -4,19 +4,17 @@
 <html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300, 400" rel="stylesheet">
+	<script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
+	{% include header.html %}
 	<div id="container">
-		<div id="name">Mathieu Rolfo</div>
-		{% include header.html %}
-		<img id="brain" src="brain.gif"></img>
+		<img id="brain" src="brain.gif" onload="showImg"></img>
 	</div>
-
-	{% include footer.html %}
 
 </body>
 </html>
