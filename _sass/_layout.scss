@@ -7,18 +7,23 @@
 	color: white;
 	font-family: $base-font-family;//'Arvo', serif;
 	position: fixed;
-	a {
-		color: white;
-		font-family: 'Source Sans Pro';
-		font-weight: 300;
-		
-	}
+	
 	padding-top: 20px;
 	padding-left: 30px;
 	div {
 		padding-right: 5px;
 	}
 
+}
+.sublink {
+	
+	font-family: 'Source Sans Pro';
+	font-weight: 300;	
+	color: white;	
+}
+
+a:visited {
+	color: white;
 }
 
 #container {
@@ -34,9 +39,8 @@
 
 #name {
 	color: white;
-	//font-family: 'Arvo', serif;
-	//font-size: 36px;
 	padding-right: 10px;
+	text-decoration: none;
 }
 
 #brain {
