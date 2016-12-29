@@ -1,11 +1,15 @@
-<div class="header">
-	<div><a id="name" href="{{ site.url }}">Mathieu Rolfo</a></div>
-	<div><a class="sublink" href="https://www.linkedin.com/in/mathieu-rolfo-555a1563">linkedin </a></div>
-	<div><a class="sublink" href="http://www.github.com/mathieurolfo">github </a></div>
-	{% for page in site.pages %} {% if page.title %}
-		<div><a class="sublink" href="{{ page.url | prepend: site.baseurl }}">projects </a></div>
-	{% endif %}
-	{% endfor %}
-	<div><a class="sublink" href="http://localhost:4000/files/resume.pdf">resume </a></div>
+<header>
+<div id="header">
+	<div id="header-left"><a id="name" href="{{ site.url }}">Mathieu Rolfo</a></div>
+	<div id="header-right">
+		<span><a class="sublink" href="https://www.linkedin.com/in/mathieu-rolfo-555a1563">linkedin</a></span>
+		<span><a class="sublink" href="http://www.github.com/mathieurolfo">github</a></span>
+		{% for page in site.pages %} {% if page.title %}
+			<span><a class="sublink" href="{{ page.url | prepend: site.baseurl }}">projects</a></span>
+		{% endif %}
+		{% endfor %}
+		<span><a class="sublink" href="http://localhost:4000/files/resume.pdf">resume </a></span>
+	</div>
 	
 </div>
+</header>

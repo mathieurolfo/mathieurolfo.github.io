@@ -5,6 +5,7 @@
 
 // Our variables
 $base-font-family: 'Arvo', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-color: #FFF5EE;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -37,6 +38,9 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+@import "../node_modules/jeet/jeet";
+//@include debug();
 @import
-	"base",
 	"layout"
+
+
