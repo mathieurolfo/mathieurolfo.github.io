@@ -1,0 +1,57 @@
+
+#header {
+	display: flex;
+	align-items: center;
+	//justify-content: center;
+	flex-direction: row;
+	color: white;
+	font-family: $base-font-family;//'Arvo', serif;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-bottom: 40px;
+	span {
+		padding-right: 10px;
+	}	
+
+
+}
+
+#header-left {
+	padding-right: 50px;
+
+}
+#header-right {
+	margin-left: auto;
+	padding-right: 60px;
+
+	//@include column(6/10);
+}
+
+
+.sublink {
+	
+	font-family: 'Source Sans Pro';
+	font-weight: 300;	
+	color: $base-font-color;	
+}
+
+.sublink:hover {
+	cursor: pointer;
+	color: 	$base-font-color;
+
+}
+
+a:visited {
+	color: 	$base-font-color;
+}
+
+
+
+
+#name {
+	color: $base-font-color;
+	padding-right: 10px;
+	text-decoration: none;
+	font-size: 24px;
+}

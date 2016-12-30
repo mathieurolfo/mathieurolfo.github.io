@@ -11,3 +11,11 @@ p {
 body {
 	background: black;
 }
+
+.container {
+	padding-left: 71px;
+	width: 60%;
+	font-family: 'Source Sans Pro';
+	font-weight: 400;	
+	color: $base-font-color;	 
+}
