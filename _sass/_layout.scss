@@ -17,5 +17,13 @@ body {
 	width: 60%;
 	font-family: 'Source Sans Pro';
 	font-weight: 400;	
-	color: $base-font-color;	 
+	color: #CCFFE5;	 
+	div {
+		margin-bottom: 5px;
+	}
+	.bullet {
+		margin-bottom: 20px;
+		margin-left: 20px;
+		font-style: italic;
+	}
 }
