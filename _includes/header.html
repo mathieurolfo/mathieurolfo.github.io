@@ -4,10 +4,15 @@
 	<div id="header-right">
 		<span><a class="sublink" href="https://www.linkedin.com/in/mathieu-rolfo-555a1563">linkedin</a></span>
 		<span><a class="sublink" href="http://www.github.com/mathieurolfo">github</a></span>
-		{% for page in site.pages %} {% if page.title %}
-			<span><a class="sublink" href="{{ page.url | prepend: site.baseurl }}">projects</a></span>
-		{% endif %}
-		{% endfor %}
+		
+		{% if page.url == '/projects/' %}
+    	<span><a class="sublink" href="{{site.baseurl}}/projects"><b>projects<b></a></span>
+    
+
+		{% else %}
+			<span><a class="sublink" href="{{site.baseurl }}/projects">projects</a></span>
+    {% endif %}
+		
 		<span><a class="sublink" href="http://localhost:4000/files/resume.pdf">resume </a></span>
 	</div>
 	
