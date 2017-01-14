@@ -1,13 +1,32 @@
 .project-container {
-	margin-top: 30px;
+	
+	font-family: 'Source Sans Pro';
+	font-weight: 400;	
+	color: #CCFFE5;	 
+	div {
+		margin-bottom: 5px;
+	}
+}
+
+.projects-header {
+	width: 60%;
+	margin-left: 71px;
 }
 
 .flex-container {
+	margin-left: 71px;
+	padding-top: 40px;
 	display: flex;
 	display: -ms-flex;
 	display: -webkit-flex;
+	width: 60%;
+	text-align: center;
 }
 
 .flex-container > div {
 	width: 50%;
+}
+
+.image {
+	width: 80%;
 }
