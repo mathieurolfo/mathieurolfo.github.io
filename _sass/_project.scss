@@ -1,32 +1,117 @@
-.project-container {
+body {
+	font-family: $content-font-family;
+	font-weight: $content-font-weight;	
+	color: $content-color;	 
+}
+
+
+
+.projects-header {
+	// width: 60%;
+	// margin-left: 71px;
+	min-width: 260px;
 	
-	font-family: 'Source Sans Pro';
-	font-weight: 400;	
-	color: #CCFFE5;	 
+}
+
+hr {
+	border-bottom: 1px solid;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	border-color-bottom: $content-color;
+	width: 80%;
+	padding-top: 20px;
+	position: relative;
+	left: 20px;
+}
+
+.projects-sub-container {
+	margin-left: 20px;
+	padding-top: 20px;
+	// width: 60%;
+}
+
+.project {
 	div {
 		margin-bottom: 5px;
 	}
+	max-width: 350px;
+	min-width: 230px;
+	// text-align: center;
+	// align-content: center;
+	a {
+		color: #42F49E;
+	}
+	padding-bottom: 20px;
+	.title {
+		text-decoration: underline;
+	}
 }
 
-.projects-header {
-	width: 60%;
-	margin-left: 71px;
-}
-
-.flex-container {
-	margin-left: 71px;
-	padding-top: 40px;
-	display: flex;
-	display: -ms-flex;
-	display: -webkit-flex;
-	width: 60%;
-	text-align: center;
-}
-
-.flex-container > div {
-	width: 50%;
-}
 
 .image {
-	width: 80%;
+	width: 90%;
+}
+
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	// padding: 0px;
+	// margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 5%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+
+.span_1_of_2 {
+	width: 43%;
+}
+
+
+
+@media only screen and 
+(min-device-width: 320px) and 
+(max-device-width: 736px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_1_of_2 { width: 100%; }
+	.project {
+		min-width: 80%;
+		max-width: none;
+	}
+	.projects-sub-container {
+		margin-left: 60px;
+	}
+	hr {
+		border-width: 0px;
+	}
+	
+}
+
+
+@media only screen and (max-width: $max-width) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_1_of_2 { width: 100%; }
+	.project {text-align: left; align-content: left;}
 }

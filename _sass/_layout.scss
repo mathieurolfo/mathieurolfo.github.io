@@ -16,9 +16,9 @@ body {
 .container {
 	padding-left: 71px;
 	width: 60%;
-	font-family: 'Source Sans Pro';
-	font-weight: 400;	
-	color: #CCFFE5;	 
+	font-family: $content-font-family;
+	font-weight: $content-font-weight;	
+	color: $content-color; 
 	div {
 		margin-bottom: 5px;
 	}
@@ -36,4 +36,32 @@ body {
 		font-style: normal;
 		margin-right: 8px;
 	}
+}
+
+@media only screen and 
+(min-device-width: 320px) and 
+(max-device-width: 736px) {
+	.container {
+		width: 80%;
+		font-size: 200%;
+		.bullet {
+			margin-bottom: 50px;
+			margin-left: 30px;
+		}
+		.bullet2 {
+			margin-left: 30px;
+		}
+		.month {
+			margin-right: 15px;
+		}
+	}
+
+}
+
+// @media only screen and (min-device-width: 1000px) {
+// 	body{font-size: 16px;}
+// }
+
+@media only screen and (max-width: $max-width) {
+	
 }

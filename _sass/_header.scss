@@ -55,3 +55,13 @@ a:visited {
 	text-decoration: none;
 	font-size: 24px;
 }
+
+@media only screen and 
+(min-device-width: 320px) and 
+(max-device-width: 736px) {
+	#header{font-size: 180%;}
+	#name {
+		font-size: 180%;
+	}
+}
+

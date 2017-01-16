@@ -11,6 +11,10 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$content-font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$content-font-weight: 400;
+$content-color: #CCFFE5;
+
 $spacing-unit:     30px;
 
 // $text-color:       #111;
@@ -22,6 +26,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
+$max-width: 	   850px;
 $content-width:    800px;
 
 $on-palm:          600px;
