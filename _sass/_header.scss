@@ -5,7 +5,7 @@
 	//justify-content: center;
 	flex-direction: row;
 	color: white;
-	font-family: $base-font-family;//'Arvo', serif;
+	font-family: $content-font-family;
 	width: 100%;
 	padding-top: 20px;
 	padding-left: 30px;
@@ -34,8 +34,6 @@
 
 
 .sublink {
-	
-	font-family: 'Source Sans Pro';
 	font-weight: 400;	
 	color: $base-font-color;	
 }
@@ -59,7 +57,6 @@ a:visited {
 	padding-right: 10px;
 	text-decoration: none;
 	font-size: 24px;
-	font-family: 'Source Sans Pro';
 	font-weight: 600;
 }
 
