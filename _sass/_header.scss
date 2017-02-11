@@ -50,7 +50,9 @@ a:visited {
 	color: 	$base-font-color;
 }
 
-
+#name:hover {
+	text-decoration: underline;
+}
 
 #name {
 	color: $base-font-color;
