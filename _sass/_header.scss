@@ -9,12 +9,26 @@
 	width: 100%;
 	padding-top: 20px;
 	padding-left: 30px;
-	padding-bottom: 60px;
+	padding-bottom: 10px;
 	span {
 		padding-right: 10px;
 	}	
 
 
+}
+
+#header-hr {
+	text-align: center;
+	border-bottom: 4px solid;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	border-color: #ffb833;
+	width: 90%;
+	padding-top: 20px;
+
+	margin: auto;
+	margin-bottom: 30px;
 }
 
 .underline {
@@ -62,6 +76,8 @@ a:visited {
 	font-family: 'Source Sans Pro';
 	font-weight: 600;
 }
+
+
 
 @media only screen and 
 (min-device-width: 320px) and 

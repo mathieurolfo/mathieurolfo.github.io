@@ -1,24 +1,20 @@
-h1 {
-	color: black;
-}
 
-#brain {
-	visibility: hidden;
-
-}
-
-p {
-	color: white;
-}
 
 body {
 	background: #222222;
 }
 
+#headline {
+	font-family: $serif-font-family;
+	font-size: 200%;
+	margin-bottom: 50px;
+	
+}
+
 
 .container {
 	padding-left: 71px;
-	width: 60%;
+	width: 65%;
 	font-family: $content-font-family;
 	font-weight: $content-font-weight;	
 	color: $content-color; 
@@ -39,6 +35,19 @@ body {
 		font-style: normal;
 		margin-right: 8px;
 	}
+}
+
+.icon {
+	
+	min-width: 25px;
+	min-height: 25px;
+	max-width: 75px;
+	max-height: 75px;
+}
+
+svg {
+	fill: white;
+	color: white;
 }
 
 #img-container {
