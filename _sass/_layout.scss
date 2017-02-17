@@ -7,7 +7,7 @@ body {
 #headline {
 	font-family: $serif-font-family;
 	font-size: 200%;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 	
 }
 
@@ -15,11 +15,11 @@ body {
 .container {
 	padding-left: 71px;
 	width: 65%;
-	font-family: $content-font-family;
-	font-weight: $content-font-weight;	
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;	
 	color: $content-color; 
 	div {
-		margin-bottom: 5px;
+		margin-bottom: 20px;
 	}
 	.bullet {
 		margin-bottom: 25px;
@@ -37,22 +37,27 @@ body {
 	}
 }
 
-.icon {
+#venn {
 	
 	min-width: 25px;
 	min-height: 25px;
-	max-width: 75px;
-	max-height: 75px;
+	max-width: 500px;
+	max-height: 500px;
+	height: 600px;
+	width: 600px;
+	margin-left: 10%;
 }
 
 svg {
-	fill: white;
+	// fill: white;
 	color: white;
+	font-family: 'Rubik', sans-serif;
+	font-size: 24px;
+
 }
 
-#img-container {
-	text-align: center;
-}
+
+
 
 @media only screen and 
 (min-device-width: 320px) and 
