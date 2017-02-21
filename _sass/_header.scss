@@ -6,9 +6,10 @@
 	flex-direction: row;
 	color: $header-font-color;
 	font-family: $content-font-family;
-	width: 100%;
+	width: 95%;
 	padding-top: 20px;
-	padding-left: 30px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 	padding-bottom: 10px;
 	span {
 		padding-right: 10px;
@@ -41,7 +42,7 @@
 }
 #header-right {
 	margin-left: auto;
-	padding-right: 60px;
+	text-align: right;
 
 	//@include column(6/10);
 }
@@ -85,7 +86,10 @@ a:visited {
 (max-device-width: 736px) {
 	#header{font-size: 190%;}
 	#name {
-		font-size: 180%;
+		font-size: 150%;
+	}
+	#header-hr {
+		border-bottom: 8px solid;
 	}
 }
 
