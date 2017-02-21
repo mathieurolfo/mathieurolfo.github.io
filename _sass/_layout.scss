@@ -64,17 +64,17 @@ svg {
 	pointer-events: all;
 }
 
-a {
+.reg-link {
 	color: 	$homepage-link-color;
 }
 
-a:hover {
+.reg-link:hover {
 	cursor: pointer;
 	color: 	$homepage-link-color;
 
 }
 
-a:visited {
+.reg-link:visited {
 	color: 	$homepage-link-color;
 }
 
