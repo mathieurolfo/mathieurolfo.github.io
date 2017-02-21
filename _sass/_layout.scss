@@ -2,6 +2,7 @@
 
 body {
 	background: $background-color;
+	text-align: center;
 }
 
 #headline {
@@ -13,8 +14,9 @@ body {
 
 
 .container {
-	padding-left: 71px;
-	width: 65%;
+	text-align: center;
+	padding-left: 10%;
+	width: 80%;
 	font-family: $content-font-family;
 	font-weight: $content-font-weight;	
 	color: $base-font-color; 
@@ -35,7 +37,14 @@ body {
 		font-style: normal;
 		margin-right: 8px;
 	}
+
+	.landing-text {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }
+
+
 
 #venn {
 	padding-top: 10px;
