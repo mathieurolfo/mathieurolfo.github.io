@@ -48,20 +48,20 @@
 }
 
 
-.sublink {
+.header-link {
 	
 	font-family: $header-font-family;
 	font-weight: $header-font-weight;	
 	color: $header-font-color;	
 }
 
-.sublink:hover {
+.header-link:hover {
 	cursor: pointer;
 	color: 	$header-font-color;
 
 }
 
-a:visited {
+.header-link:visited {
 	color: 	$header-font-color;
 }
 

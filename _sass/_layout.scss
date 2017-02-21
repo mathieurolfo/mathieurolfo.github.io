@@ -52,7 +52,7 @@ body {
 	max-width: 500px;
 	max-height: 500px;
 	height: 300px;
-	width: 400px;
+	width: 375px;
 	font-family: $content-font-family;
 }
 
@@ -64,7 +64,19 @@ svg {
 	pointer-events: all;
 }
 
+a {
+	color: 	$homepage-link-color;
+}
 
+a:hover {
+	cursor: pointer;
+	color: 	$homepage-link-color;
+
+}
+
+a:visited {
+	color: 	$homepage-link-color;
+}
 
 
 @media only screen and 
