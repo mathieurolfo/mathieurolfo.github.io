@@ -4,16 +4,18 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: 'Arvo', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-color: #FFF5EE;
+$base-font-color: #4d4d4d;
 $base-font-size:   20px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
 $serif-font-family: 'Playfair Display', serif;
 
-$header-font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$header-font-family: 'Rubik', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $header-font-weight: 400;
+$header-font-color: #737373;
+$header-hr-color: #e69500;
 
 $content-font-family: 'Rubik', sans-serif;
 $content-font-weight: 300;
@@ -23,7 +25,7 @@ $content-color: #f2f2f2;
 $spacing-unit:     30px;
 
 // $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #fbfbfb;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;

@@ -1,7 +1,7 @@
 
 
 body {
-	background: #222222;
+	background: $background-color;
 }
 
 #headline {
@@ -15,9 +15,9 @@ body {
 .container {
 	padding-left: 71px;
 	width: 65%;
-	font-family: 'Rubik', sans-serif;
-	font-weight: 300;	
-	color: $content-color; 
+	font-family: $content-font-family;
+	font-weight: $content-font-weight;	
+	color: $base-font-color; 
 	div {
 		margin-bottom: 20px;
 	}
@@ -46,14 +46,14 @@ body {
 	height: 300px;
 	width: 400px;
 	margin-left: 10%;
-	font-family: 'Rubik', sans-serif;
+	font-family: $content-font-family;
 }
 
 svg {
 	// fill: white;
-	color: white;
-	font-family: 'Rubik', sans-serif;
-	font-size: 24px;
+	color: #222222;
+	font-family: $content-font-family;
+	font-size: 150%;
 	pointer-events: all;
 }
 

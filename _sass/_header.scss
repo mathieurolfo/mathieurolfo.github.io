@@ -4,7 +4,7 @@
 	align-items: center;
 	//justify-content: center;
 	flex-direction: row;
-	color: $base-font-color;
+	color: $header-font-color;
 	font-family: $content-font-family;
 	width: 100%;
 	padding-top: 20px;
@@ -23,12 +23,12 @@
 	border-left: 0px;
 	border-right: 0px;
 	border-top: 0px;
-	border-color: #ffb833;
+	border-color: $header-hr-color;
 	width: 90%;
-	padding-top: 20px;
+	padding-top: 15px;
 
 	margin: auto;
-	margin-bottom: 30px;
+	margin-bottom: 4%;
 }
 
 .underline {
@@ -49,19 +49,19 @@
 
 .sublink {
 	
-	font-family: 'Source Sans Pro';
-	font-weight: 400;	
-	color: $base-font-color;	
+	font-family: $header-font-family;
+	font-weight: $header-font-weight;	
+	color: $header-font-color;	
 }
 
 .sublink:hover {
 	cursor: pointer;
-	color: 	$base-font-color;
+	color: 	$header-font-color;
 
 }
 
 a:visited {
-	color: 	$base-font-color;
+	color: 	$header-font-color;
 }
 
 #name:hover {
@@ -69,12 +69,13 @@ a:visited {
 }
 
 #name {
-	color: $base-font-color;
 	padding-right: 10px;
 	text-decoration: none;
 	font-size: 28px;
-	font-family: 'Source Sans Pro';
-	font-weight: 600;
+	font-family: $header-font-family;
+	font-weight: 400;
+	color: black;
+	white-space: nowrap;
 }
 
 
