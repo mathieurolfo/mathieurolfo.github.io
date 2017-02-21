@@ -3,28 +3,28 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" onclick="vennClicked(event)" onmouseover="vennMoused(event)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" onclick="vennClicked(event)" onmousemove="vennMoused(event)">
 	<defs>
 	  <style type="text/css">@import url(http://fonts.googleapis.com/css?family=Rubik:300);</style>
 	</defs>
 
 	
-	<circle id="code-circle" cx="125" cy="125" r="120" stroke="#4d4d4d" fill="#4d4d4d" stroke-width="2" fill-opacity="0.65"/>
+	<circle id="code-circle" cx="125" cy="125" r="120" stroke="#4d4d4d" fill="#4d4d4d" stroke-width="2" fill-opacity="0.4"/>
 
-	<circle id="people-circle" cx="240" cy="125" r="120" stroke="#4d4d4d" stroke-width="2" fill-opacity="0.65" fill="#4d4d4d" />
+	<circle id="people-circle" cx="240" cy="125" r="120" stroke="#4d4d4d" stroke-width="2" fill-opacity="0.4" fill="#4d4d4d" />
 
 
 	<!-- <a id="code-link" xmlns:xlink="http://www.w3.org/1999/xlink" data-href="/projects" target="_parent"> -->
-		<text x="38" y="130" fill="white" margin="5px">code</text>
+		<text id="code-text" x="38" y="130" fill="white" margin="5px">code</text>
 	<!-- </a> -->
 
 
 	<!-- <a href="/projects" target="_parent"> -->
-		<text x="145" y="130" fill="white" >design</text>
+		<text id="design-text" x="145" y="130" fill="white" >design</text>
 	<!-- </a> -->
 
 	<!-- <a href="/projects" target="_parent"> -->
-		<text x="265" y="130" fill="white" >people</text>
+		<text id="people-text" x="265" y="130" fill="white" >people</text>
 	<!-- </a> -->
 	<script type="text/javascript">
 		//<![CDATA[
@@ -35,8 +35,7 @@
 
 		function inOverlap(event) {
 			if (inCircle(event.clientX, event.clientY, 125, 125, 120) && inCircle(event.clientX, event.clientY, 240, 125, 120)) {
-				console.log("design clicked");
-				parent.window.location.href = '/projects';
+				return true;
 			}
 		}
 
@@ -49,18 +48,31 @@
 			if (inDiagram(event)) {
 				console.log("in diagram");
 				event.target.style.cursor = "pointer";
+
 			}
+			
 			if (inCircle(event.clientX, event.clientY, 125, 125, 120)) {
 				console.log("in code")
-				document.getElementById("code-circle").setAttribute('fill-opacity', '0.5');
+				document.getElementById("code-circle").setAttribute('fill-opacity', '0.7');
+				document.getElementById("code-text").setAttribute('text-decoration', 'underline');
 			} else {
-				document.getElementById("code-circle").setAttribute('fill-opacity', '0.25');
+				document.getElementById("code-circle").setAttribute('fill-opacity', '0.4');
+				document.getElementById("code-text").setAttribute('text-decoration', 'none');
 			}
 
 			if (inCircle(event.clientX, event.clientY, 240, 125, 120)) {
-				document.getElementById("people-circle").setAttribute('fill-opacity', '0.5');
+				document.getElementById("people-circle").setAttribute('fill-opacity', '0.7');
+				document.getElementById("people-text").setAttribute('text-decoration', 'underline');
 			} else {
-				document.getElementById("people-circle").setAttribute('fill-opacity', '0.25');
+				document.getElementById("people-circle").setAttribute('fill-opacity', '0.4');
+				document.getElementById("people-text").setAttribute('text-decoration', 'none');
+			}
+			if (inOverlap(event)) {
+				document.getElementById("code-text").setAttribute('text-decoration', 'none');
+				document.getElementById("people-text").setAttribute('text-decoration', 'none');
+				document.getElementById("design-text").setAttribute('text-decoration', 'underline');
+			} else {
+				document.getElementById("design-text").setAttribute('text-decoration', 'none');
 			}
 		}
 
