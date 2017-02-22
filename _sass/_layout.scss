@@ -18,7 +18,7 @@ body {
 	width: 80%;
 	font-family: $content-font-family;
 	font-weight: $content-font-weight;	
-	color: $base-font-color; 
+	color: $content-color; 
 	div {
 		margin-bottom: 20px;
 	}
@@ -38,6 +38,7 @@ body {
 	}
 
 	.landing-text {
+		
 		margin-left: 5%;
 		margin-right: 5%;
 	}
