@@ -6,15 +6,14 @@
 	flex-direction: row;
 	color: $header-font-color;
 	font-family: $content-font-family;
-	width: 95%;
-	padding-top: 20px;
+	width: 95.8%;
+	padding-top: 2.2%;
 	padding-left: 2.5%;
-	padding-right: 2.5%;
-	padding-bottom: 10px;
+	padding-right: 2%;
+	padding-bottom: 2.2%;
 	span {
 		padding-right: 10px;
 	}	
-
 
 }
 
@@ -26,8 +25,7 @@
 	border-top: 0px;
 	border-color: $header-hr-color;
 	width: 90%;
-	padding-top: 15px;
-
+	
 	margin: auto;
 	margin-bottom: 4%;
 }

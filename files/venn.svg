@@ -82,10 +82,10 @@
 				parent.window.location.href = '/projects';
 			} else if (inCircle(event.clientX, event.clientY, 125, 125, 120)) {
 				//code circle clicked
-				parent.window.location.href = '/projects';
+				parent.window.location.href = '/projects/code';
 			} else if (inCircle(event.clientX, event.clientY, 240, 125, 120)) {
 				//people circle clicked
-				parent.window.location.href = '/projects'; 
+				parent.window.location.href = '/projects/people'; 
 			}
 		}
 
