@@ -82,12 +82,18 @@
 @media only screen and 
 (min-device-width: 320px) and 
 (max-device-width: 736px) {
-	#header{font-size: 190%;}
-	#name {
-		font-size: 150%;
+	#header{
+		font-size: 180%;
+		padding-top: 4%;
+		padding-bottom: 4%;
 	}
+	#name {
+		font-size: 180%;
+	}
+
 	#header-hr {
 		border-bottom: 8px solid;
+		border-color: $header-hr-color;
 	}
 }
 

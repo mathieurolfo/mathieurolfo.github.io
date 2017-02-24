@@ -38,7 +38,7 @@ body {
 	}
 
 	.landing-text {
-		
+
 		margin-left: 5%;
 		margin-right: 5%;
 	}
@@ -47,13 +47,12 @@ body {
 
 
 #venn {
+	display: block;
+	margin: auto;
+	text-align: center;
 	padding-top: 10px;
-	min-width: 25px;
-	min-height: 25px;
-	max-width: 500px;
-	max-height: 500px;
-	height: 300px;
-	width: 375px;
+	// height: 300px;
+	width: 60%;
 	font-family: $content-font-family;
 }
 
@@ -83,6 +82,8 @@ svg {
 @media only screen and 
 (min-device-width: 320px) and 
 (max-device-width: 736px) {
+	
+	-webkit-text-size-adjust: none;
 	.container {
 		width: 80%;
 		font-size: 240%;
@@ -98,6 +99,10 @@ svg {
 		}
 	}
 
+}
+
+@media all and (orientation: landscape) {
+	
 }
 
 // @media only screen and (min-device-width: 1000px) {

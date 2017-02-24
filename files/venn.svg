@@ -3,7 +3,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" onclick="vennClicked(event)" onmousemove="vennMoused(event)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" onclick="vennClicked(event)" onmousemove="vennMoused(event)" viewBox="0 0 380 350">
 	<defs>
 	  <style type="text/css">@import url(http://fonts.googleapis.com/css?family=Rubik:300);</style>
 	</defs>
@@ -29,30 +29,30 @@
 	<script type="text/javascript">
 		//<![CDATA[
 
-		function inCircle(clickX, clickY, circleX, circleY, radius) {
-			return (Math.pow(clickX-circleX,2) + Math.pow(clickY-circleY,2) < Math.pow(radius,2));
+
+
+		function inCircle(event, circleX, circleY, radius) {
+			var loc = adjustPoint(event);
+			return (Math.pow(loc.x-circleX,2) + Math.pow(loc.y-circleY,2) < Math.pow(radius,2));
 		}
 
 		function inOverlap(event) {
-			if (inCircle(event.clientX, event.clientY, 125, 125, 120) && inCircle(event.clientX, event.clientY, 240, 125, 120)) {
+			if (inCircle(event, 125, 125, 120) && inCircle(event, 240, 125, 120)) {
 				return true;
 			}
 		}
 
 		function inDiagram(event) {
-			return (inCircle(event.clientX, event.clientY, 125, 125, 120) || inCircle(event.clientX, event.clientY, 240, 125, 120));
+			return (inCircle(event, 125, 125, 120) || inCircle(event, 240, 125, 120));
 		}
 
 		function vennMoused(event) {
-			console.log("mouseover occurred");
+			
 			if (inDiagram(event)) {
-				console.log("in diagram");
 				event.target.style.cursor = "pointer";
-
 			}
 			
-			if (inCircle(event.clientX, event.clientY, 125, 125, 120)) {
-				console.log("in code")
+			if (inCircle(event, 125, 125, 120, "code-circle")) {
 				document.getElementById("code-circle").setAttribute('fill-opacity', '0.7');
 				document.getElementById("code-text").setAttribute('text-decoration', 'underline');
 			} else {
@@ -60,7 +60,7 @@
 				document.getElementById("code-text").setAttribute('text-decoration', 'none');
 			}
 
-			if (inCircle(event.clientX, event.clientY, 240, 125, 120)) {
+			if (inCircle(event, 240, 125, 120)) {
 				document.getElementById("people-circle").setAttribute('fill-opacity', '0.7');
 				document.getElementById("people-text").setAttribute('text-decoration', 'underline');
 			} else {
@@ -76,15 +76,21 @@
 			}
 		}
 
+		function adjustPoint(event) {
+			var svg = document.querySelector('svg')
+			var pt = svg.createSVGPoint();
+			pt.x = event.clientX; 
+			pt.y = event.clientY;
+			var actualPt = pt.matrixTransform(svg.getScreenCTM().inverse());
+			return actualPt;
+		}
+
 		function vennClicked(event) {
 			if (inOverlap(event)) {
-				//design clicked
 				parent.window.location.href = '/projects';
-			} else if (inCircle(event.clientX, event.clientY, 125, 125, 120)) {
-				//code circle clicked
+			} else if (inCircle(event, 125, 125, 120)) {
 				parent.window.location.href = '/projects/code';
-			} else if (inCircle(event.clientX, event.clientY, 240, 125, 120)) {
-				//people circle clicked
+			} else if (inCircle(event, 240, 125, 120)) {
 				parent.window.location.href = '/projects/people'; 
 			}
 		}
