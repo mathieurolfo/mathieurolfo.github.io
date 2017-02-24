@@ -87,11 +87,25 @@
 
 		function vennClicked(event) {
 			if (inOverlap(event)) {
-				parent.window.location.href = '/projects';
+				
+				if (parent.window.location.href.search("projects") > -1) {
+					parent.window.location.href = '/projects/design';
+				} else {
+					parent.window.location.href = '/design';
+				}
+				
 			} else if (inCircle(event, 125, 125, 120)) {
-				parent.window.location.href = '/projects/code';
+				if (parent.window.location.href.search("projects") > -1) {
+					parent.window.location.href = '/projects/code';
+				} else {
+					parent.window.location.href = '/code';
+				}
 			} else if (inCircle(event, 240, 125, 120)) {
-				parent.window.location.href = '/projects/people'; 
+				if (parent.window.location.href.search("projects") > -1) {
+					parent.window.location.href = '/projects/people';
+				} else {
+					parent.window.location.href = '/people';
+				}
 			}
 		}
 
