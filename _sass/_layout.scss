@@ -52,6 +52,7 @@ body {
 	text-align: center;
 	padding-top: 10px;
 	// height: 300px;
+	max-width: 400px;
 	width: 60%;
 	font-family: $content-font-family;
 }
@@ -83,7 +84,7 @@ svg {
 (min-device-width: 320px) and 
 (max-device-width: 736px) {
 	
-	-webkit-text-size-adjust: none;
+	
 	.container {
 		width: 80%;
 		font-size: 240%;
@@ -99,10 +100,15 @@ svg {
 		}
 	}
 
+	#venn {
+		width: 80%;
+		max-width: none;
+	}
+
 }
 
 @media all and (orientation: landscape) {
-	
+	-webkit-text-size-adjust: none;
 }
 
 // @media only screen and (min-device-width: 1000px) {
