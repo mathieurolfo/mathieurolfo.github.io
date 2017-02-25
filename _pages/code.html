@@ -1,28 +1,28 @@
 ---
 layout: page
-title: code_projects
+title: "code projects"
 description: "these are my code projects (more interesting on the technical side than on the user side)."
 permalink: /projects/code/
 ---
 	<div class="container">
 		<div class="projects-header">
-			<h2><a class="reg-link" href="/projects">Projects</a>: Code</h2>
-			<div class="intro-text">Through the computer science courses I've taken at Stanford, work experience, and side projects, I've written some software that I like.</div>
+			<h2><a class='reg-link' href="/projects">Projects</a>: Code</h2>
+			<div class="intro-text">Through the computer science courses I've taken at Stanford, work experience, and side projects, I've written some software. Some of the projects draw upon artificial intelligence techniques, while others are front-end focused.</div>
 		</div>
 
 		<hr id="project-hr">
 
 		<div class="section group projects-sub-container">
 			<div class="col span_1_of_2">
-				{% include project.html title="Poetwriter" text="Poetwriter is a program that, given rhyme patterns and syllable constraints, generates poetry in the style of a specified artist. You can see the codebase for the program <a href='https://github.com/ntindall/poetwriter'>here</a>. " %}
+				{% include project.html title="Poetwriter" text="Poetwriter is a program that, given rhyme patterns and syllable constraints, generates poetry in the style of a specified artist. The project scraped lyrics for a given artist from Genius (though accepts any .txt file as input), trains an n-gram model, and generates rhyme pairs using a uniform-cost depth-first search with constraint matching within lines (for syllable count) and between lines (for rhyme patterns). The <a class='reg-link' href='https://github.com/ntindall/poetwriter'>poetwriter source code</a> is visible on Github." %}
 
-				{% include project.html title="Where is the Lily?" text="Natural language is filled with instances where what you mean != what you said. We ran an experiment to get data on how people used spatial language, and wrote a program that used Bayesian inference to learn these patterns. Description <a href='../files/lilypaper.pdf'>here</a>; codebase <a href='https://github.com/ntindall/reference_games'>here</a>." %}
+				{% include project.html title="Where is the Lily?" text="Natural language is filled with instances where what you mean != what you said. We ran an experiment to get data on how people used spatial language, and wrote a program that used Bayesian inference to learn these patterns. Description <a class='reg-link' href='../../files/lilypaper.pdf'>here</a>; codebase <a class='reg-link' href='https://github.com/ntindall/reference_games'>here</a>." %}
 
 				
 
 			</div>
 			<div class="col span_1_of_2">
-				{% include project.html title="Pinterest" text="What predicts someone's influence in a social network? We explored this question using network analysis techniques on a nearly-billion-post subset of Pinterest. Longer discussion of methods is <a href='https://github.com/dmakian/PinterestDiversity'>here</a>; codebase <a href='https://github.com/dmakian/PinterestDiversity'>here</a>." %}
+				{% include project.html title="Pinterest" text="What predicts someone's influence in a social network? We explored this question using network analysis techniques on a nearly-billion-post subset of Pinterest. Longer discussion of methods is <a class='reg-link'  href='https://github.com/dmakian/PinterestDiversity'>here</a>; codebase <a class='reg-link' href='https://github.com/dmakian/PinterestDiversity'>here</a>." %}
 				
 				{% include project.html title="Website" text="mathieurolfo.info was built mostly from scratch by me. It's statically generated using Jekyll, hosted with Github Pages, uses Liquid templating, and responsively designed. #meta" %}
 
