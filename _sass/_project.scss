@@ -6,8 +6,8 @@ body {
 }
 
 .projects-header {
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
 	.intro-text {
 		font-style: italic;
 	}
@@ -123,8 +123,12 @@ body {
 	hr {
 		border-width: 0px;
 	}
-	.intro-text {
-		width: 70%;
+	.projects-header {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.venn {
+		width: 100%;
 	}
 	
 }

@@ -9,9 +9,9 @@
 	</defs>
 
 	
-	<circle id="code-circle" cx="125" cy="125" r="120" stroke="black" fill="blue" stroke-width="2" fill-opacity="0.4"/>
+	<circle id="code-circle" cx="125" cy="125" r="120" stroke="black" fill="#9900cc" stroke-width="2" fill-opacity="0.4"/>
 
-	<circle id="people-circle" cx="240" cy="125" r="120" stroke="black" stroke-width="2" fill-opacity="0.4" fill="red" />
+	<circle id="people-circle" cx="240" cy="125" r="120" stroke="black" stroke-width="2" fill-opacity="0.4" fill="#aa0909" />
 
 
 	<!-- <a id="code-link" xmlns:xlink="http://www.w3.org/1999/xlink" data-href="/projects" target="_parent"> -->
