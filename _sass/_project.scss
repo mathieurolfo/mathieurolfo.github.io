@@ -15,7 +15,12 @@ body {
 
 .code {
 	font-family: $code-title-font-family;
-	font-size: 120%;
+	
+}
+
+.proj-title {
+	font-size: 130%;
+	text-decoration: underline;
 }
 
 #project-hr {
