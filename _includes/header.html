@@ -7,14 +7,21 @@
 		<span><a class="header-link" href="http://www.github.com/mathieurolfo">github</a></span>
 		
 		{% if page.url == '/projects/' %}
-    	<span><a class="header-link underline" href="/projects">projects</a></span>
+    		<span><a class="header-link underline" href="/projects">projects</a></span>
 
 		{% else %}
 			<span><a class="header-link" href="/projects">projects</a></span>
-    {% endif %}
+    	{% endif %}
 		
-		<span><a class="header-link" href="/files/resume.pdf">resume </a></span>
-		<span><a class="header-link" href="/random">random </a></span>
+		<span><a class="header-link" href="/files/resume.pdf">resume</a></span>
+		
+		{% if page.url == '/random/' %}
+    		<span><a class="header-link underline" href="/random">random</a></span>
+
+		{% else %}
+			<span><a class="header-link" href="/random">random</a></span>
+    	{% endif %}
+
 	</div>
 	
 </div>
