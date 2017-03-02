@@ -31,7 +31,11 @@
 }
 
 .underline {
-	text-decoration: underline;
+	padding-bottom: 2px;
+	// margin-bottom: 10px;
+	// text-decoration: underline;
+	border-bottom: 3px solid;
+	border-color: $header-font-color;
 }
 
 #header-left {
@@ -56,19 +60,31 @@
 .header-link:hover {
 	cursor: pointer;
 	color: 	$header-font-color;
+	text-decoration: none;
+	padding-bottom: 2px;
+	// margin-bottom: 10px;
+	// text-decoration: underline;
+	border-bottom: 3px solid;
+	border-color: $header-font-color;
 
 }
 
 .header-link:visited {
 	color: 	$header-font-color;
+	
 }
 
 #name:hover {
-	text-decoration: underline;
+	// text-decoration: underline;
+	padding-bottom: 2px;
+	// margin-bottom: 10px;
+	// text-decoration: underline;
+	border-bottom: 3px solid;
+	border-color: black;
 }
 
 #name {
-	padding-right: 10px;
+	margin-right: 10px;
 	text-decoration: none;
 	font-size: 28px;
 	font-family: $header-font-family;
@@ -96,5 +112,7 @@
 		border-color: $header-hr-color;
 		margin-bottom: 8%;
 	}
+
+
 }
 
