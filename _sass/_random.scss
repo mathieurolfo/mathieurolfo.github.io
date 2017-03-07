@@ -1,13 +1,22 @@
 #random-header-1 {
-	-ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+	-ms-transform: rotate(8deg); /* IE 9 */
+    -webkit-transform: rotate(8deg); /* Chrome, Safari, Opera */
+    transform: rotate(8deg);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 150%;
+    padding-right: 10px;
 }
 
 #random-header-2 {
-	-ms-transform: rotate(-12deg); /* IE 9 */
-    -webkit-transform: rotate(-12deg); /* Chrome, Safari, Opera */
-    transform: rotate(-12deg);
+	position: relative;
+	top: 3px;
+	-ms-transform: rotate(-13deg); /* IE 9 */
+    -webkit-transform: rotate(-13deg); /* Chrome, Safari, Opera */
+    transform: rotate(-13deg);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 150%;
 }
 
 .random-sentence-begin {
@@ -25,6 +34,22 @@
 
 .random-item {
 	padding-bottom: 1.5%;
+}
+
+.random-1 {
+	position: relative;
+	left: 10%;
+	//margin-left: 30px;
+}
+
+.random-2 {
+	position: relative;
+	right: 20%;
+}
+
+.random-3 {
+	position: relative;
+	left: 27%;
 }
 
 @media only screen and 
