@@ -25,28 +25,19 @@ body {
 	background-color: #ffe4b3;
 }
 
-.design:hover {
-	// cursor: pointer;
-	// background-color: #ffe4b3;
-	
-}
-
-.design {
-	// a {
-	// 	color: $content-color;
-	// 	text-decoration: none;
-	// }
-}
 
 .project-img {
 	max-width: 300px;
 	max-height: 300px;
 }
 
+.design-proj-title {
+	font-size: 130%;
+}
 
 .proj-title {
 	font-size: 130%;
-	//text-decoration: underline;
+	text-decoration: underline;
 }
 
 .picture-above {
