@@ -40,6 +40,35 @@ permalink: /projects/design/habitlab
 		<h1>Concept</h1>
 		<div>Rather than make users download different extensions and manually toggle between one-size-fits-all methods, Habitlab tries to discover the best interventions through experimentation and feedback. The thesis holds that giving people choice over the interventions they see, combined with objective usage data, will ultimately result in better retention and goal achievement.</div>
 
+		<h2>How it works</h2>
+		<div>A user installs the Chrome extension, and selects websites from a pre-set list that they would like to develop better habits on. They also set a daily time goal from 5-90 minutes a day. After this simple set-up is complete, they can continue browsing normally. However, when they visit websites, there will be some change made to the UX - some “intervention” will be inserted through the extension into the webpage, not known to the user in advance, that will help them spend less time or navigate away from the page. This draws on a library of interventions, which is a superset of existing methods listed above. As time progresses, the extension will learn which interventions work better for that user, and the user can track their progress and indicate their preferred extensions.</div>
+
+		<h2>Multi-armed Bandit</h2>
+		<div>To determine which interventions are most effective, we used an approximate solution to the <a class="reg-link" href="https://en.wikipedia.org/wiki/Multi-armed_bandit"> multi-armed bandit problem</a>. The algorithm first approximates your baseline time spent on a site without interventions by a variety of possible methods, then calculates the amount of time spent on a site with a given intervention deployed. The intervention will deployed again in the future as a function of how effective it was, measured by time spent. </div>
+
+		<h2> Design Principles</h2>
+		<div>
+		The <b>adaptability to different users</b> of the system is a key design principle. As described by Prof. Robert Cialdini, there are <a class="reg-link" href="https://en.wikipedia.org/wiki/Robert_Cialdini#Six_key_principles_of_influence"> six key principles of persuasion</a> that convince people to take action. However, the relative effectiveness of these principles differs from person to person, with no “optimal” balance among them. As a result, it seems optimal to design for this aspect of human cognition.
+		</div>
+		<div>Habitlab is also sensitive to <b>constant change</b> within a single user's preferences. From our user testing and preliminary interviews, we learned that people learn to ‘see through’ interventions, just as they ‘see through’ advertisements, and they become less effective. However, the multi-armed bandit continually updates its beliefs about what works and what doesnt, and will rotate out interventions that cease to be effective.</div>
+
+		<div>The design also puts emphasis on <b>goal setting</b> and <b>quantitative feedback</b>. Users are required to set daily time goals to use the extension, and analytics are regularly updated and displayed to the user. The idea behind this draws upon research that goal setting supports behavior change, and that regular feedback is necessary for improvement.</div>
+
+		<div>At the level of individual interventions, the design goal is to <b>empower users to make their time well spent</b>. This draws upon Tristan Harris’ <a class="reg-link" href="http://timewellspent.io">Time Well Spent</a> initiative, and attempts to counteract interfaces that intend to distract and addict you. Some examples of these designs, and our solutions, follow below.</div>
+
+		<h1>Design and Implementation</h1>
+		<h2>Interventions</h2>
+		<div>There were a variety of interventions that I mocked up, user-tested, and implemented within Habitlab. These included removing the news feed on sites like Facebook and Twitter, injecting a timer into the Facebook feed as though it were a piece of content, blocking scrolling after a certain number of scrolls, an interstitial page that displayed information and required click-through for a user to continue to their desired site, and
+		artificially increasing page load times on goal sites. </div>
+		
+		<h2>Design Process</h2>
+		<div>To generate ideas for new interventions, I would talk about various design elements in existing sites and brainstorm with the Habitlab team. I would also discover ideas from user pain points through testing of existing interventions, and through regular conversations with a core group of alpha users. Then, I would create paper mockups or bare-bones code prototypes, depending on complexity, to present to users. For many interventions, since they were smaller in complexity than stand-alone products, medium-fidelity prototypes and special prototyping software was not used. After this, a working and functional prototype, though not fully polished on design, was pushed to alpha users. I would then solicit feedback and do observational research, and use these insights to refine my designs.</div>
+		<div></div>
+
+
+		<h2>Design challenges</h2>
+		<div>There were some interesting design problems we had to tackle in creating Habitlab. The major challenge was <b>building the user's mental model.</b> There are simply very few tools that work like Habitlab to secretly and unpredictably modify the UI of a site, and it was hard for users to initially understand how it would work. By careful onboarding and a branding of Habitlab as a <b>platform for experimentation</b>, we helped users to understand Habitlab's mechanism. 
+		Another was <b>strictness</b>: being lenient enough that users would not be frustrated and uninstall the extension, but being strict enough that users could not easily bypass the interventions. We decided not to make a “Hide Intervention” button when being displayed, but it could be done on the settings page. We also created some interventions that required less strict actions to continue. </div>
 		
 
 </div>
