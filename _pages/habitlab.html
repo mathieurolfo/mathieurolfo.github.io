@@ -41,7 +41,13 @@ permalink: /projects/design/habitlab
 		<div>Rather than make users download different extensions and manually toggle between one-size-fits-all methods, Habitlab tries to discover the best interventions through experimentation and feedback. The thesis holds that giving people choice over the interventions they see, combined with objective usage data, will ultimately result in better retention and goal achievement.</div>
 
 		<h2>How it works</h2>
+		<img class="narrow-box spaced" src="{{site.url}}/files/landingpage.png"></img>
+		
+
 		<div>A user installs the Chrome extension, and selects websites from a pre-set list that they would like to develop better habits on. They also set a daily time goal from 5-90 minutes a day. After this simple set-up is complete, they can continue browsing normally. However, when they visit websites, there will be some change made to the UX - some “intervention” will be inserted through the extension into the webpage, not known to the user in advance, that will help them spend less time or navigate away from the page. This draws on a library of interventions, which is a superset of existing methods listed above. As time progresses, the extension will learn which interventions work better for that user, and the user can track their progress and indicate their preferred extensions.</div>
+		<img class="narrow-box spaced" src="{{site.url}}/files/habitlab_goals.png">
+
+
 
 		<h2>Multi-armed Bandit</h2>
 		<div>To determine which interventions are most effective, we used an approximate solution to the <a class="reg-link" href="https://en.wikipedia.org/wiki/Multi-armed_bandit"> multi-armed bandit problem</a>. The algorithm first approximates your baseline time spent on a site without interventions by a variety of possible methods, then calculates the amount of time spent on a site with a given intervention deployed. The intervention will deployed again in the future as a function of how effective it was, measured by time spent. </div>
@@ -58,6 +64,10 @@ permalink: /projects/design/habitlab
 
 		<h1>Design and Implementation</h1>
 		<h2>Interventions</h2>
+
+		<img class="narrow-box spaced" src="{{site.url}}/files/intervention1.png" />
+		<div class="caption">This is one example intervention, an interstitial page. It delays gratification by not loading the page, requires an action to proceed, leverages color coding for ideal behavior by making the “Close Facebook” button green and “Continue” red, gives users passive information about time used, and provides concrete actions to take instead in the blue box.</div>
+
 		<div>There were a variety of interventions that I mocked up, user-tested, and implemented within Habitlab. These included removing the news feed on sites like Facebook and Twitter, injecting a timer into the Facebook feed as though it were a piece of content, blocking scrolling after a certain number of scrolls, an interstitial page that displayed information and required click-through for a user to continue to their desired site, and
 		artificially increasing page load times on goal sites. </div>
 		
