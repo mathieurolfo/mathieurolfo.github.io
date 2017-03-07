@@ -1,7 +1,15 @@
 window.onload = function() {
 	// document.getElementById("arc1").setAttribute("d", mapArc(105, 105, 100, 0, 220))
 	
-
+	currentTime = new Date();
+	hours = currentTime.getHours();
+	if (hours < 5 || hours > 17) {
+		document.getElementById("headline").textContent = "Good evening!"
+	} else if (hours < 12) {
+		document.getElementById("headline").textContent = "Good morning!"
+	} else if (hours < 17) {
+		document.getElementById("headline").textContent = "Good afternoon!"
+	}
 }
 
 // document.getElementById("arc1").setAttribute("d", mapArc(105, 105, 100, 0, 220));
