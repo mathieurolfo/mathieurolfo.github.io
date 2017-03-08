@@ -27,8 +27,8 @@ body {
 
 
 .project-img {
-	max-width: 220px;
-	max-height: 220px;
+	max-width: 400px;
+	max-height: 400px;
 }
 
 .design-proj-title {
@@ -176,16 +176,25 @@ h1 {
 	.project {
 		min-width: 80%;
 		max-width: none;
+		//text-align: left;
 	}
+	.description {
+		text-align: left;
+	}
+
+	.intro-text {
+		text-align: left;
+	}
+
 	.projects-sub-container {
 	}
 	hr {
 		border-width: 0px;
 	}
-	.projects-header {
-		margin-left: 10%;
 		margin-right: 10%;
 	}
+	.projects-header {
+		margin-left: 10%;
 	.venn {
 		width: 100%;
 	}
@@ -206,4 +215,11 @@ h1 {
 	.col { margin: 1% 0 1% 0%;}
 	.span_1_of_2 { width: 100%; }
 	// .project {text-align: left; align-content: left;}
+	.project-img {
+		max-width: 400px;
+		max-height: 400px;
+		width: 80%;
+		height: 80%;
+	}
+
 }
