@@ -8,32 +8,50 @@
 
 <url>
   <loc>http://mathieurolfo.info/</loc>
-  <lastmod>2017-02-04T14:50:01+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.00</priority>
+  <lastmod>2017-03-07T23:49:23+00:00</lastmod>
 </url>
 <url>
   <loc>http://mathieurolfo.info/projects/</loc>
-  <lastmod>2017-02-04T14:50:01+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2017-03-07T23:49:23+00:00</lastmod>
 </url>
 <url>
   <loc>http://mathieurolfo.info/files/resume.pdf</loc>
-  <lastmod>2017-02-04T14:49:59+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2017-03-07T23:49:21+00:00</lastmod>
+</url>
+<url>
+  <loc>http://mathieurolfo.info/random/</loc>
+  <lastmod>2017-03-07T23:49:23+00:00</lastmod>
+</url>
+<url>
+  <loc>http://mathieurolfo.info/projects/code/</loc>
+  <lastmod>2017-03-07T23:49:23+00:00</lastmod>
+</url>
+<url>
+  <loc>http://mathieurolfo.info/projects/people/</loc>
+  <lastmod>2017-03-07T23:49:23+00:00</lastmod>
+</url>
+<url>
+  <loc>http://mathieurolfo.info/projects/design/</loc>
+  <lastmod>2017-03-07T23:49:23+00:00</lastmod>
 </url>
 <url>
   <loc>http://mathieurolfo.info/files/lilypaper.pdf</loc>
-  <lastmod>2017-02-04T14:49:59+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+  <lastmod>2017-03-07T23:49:21+00:00</lastmod>
+</url>
+<url>
+  <loc>http://mathieurolfo.info/files/pinterestpaper.pdf</loc>
+  <lastmod>2017-03-07T23:49:21+00:00</lastmod>
 </url>
 <url>
   <loc>http://mathieurolfo.info/files/trello.pdf</loc>
-  <lastmod>2017-02-04T14:49:59+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+  <lastmod>2017-03-07T23:49:21+00:00</lastmod>
+</url>
+<url>
+  <loc>http://mathieurolfo.info/projects/design/habitlab</loc>
+  <lastmod>2017-03-07T23:49:23+00:00</lastmod>
+</url>
+<url>
+  <loc>http://mathieurolfo.info/projects/design/scanme</loc>
+  <lastmod>2017-03-07T23:49:23+00:00</lastmod>
 </url>
 </urlset>
