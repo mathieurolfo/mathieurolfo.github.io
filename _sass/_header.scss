@@ -30,7 +30,7 @@
 	margin-bottom: 4%;
 }
 
-.underline {
+.header-underline {
 	padding-bottom: 2px;
 	// margin-bottom: 10px;
 	// text-decoration: underline;
@@ -73,7 +73,7 @@
 	
 }
 
-#name:hover {
+#header-name:hover {
 	// text-decoration: underline;
 	padding-bottom: 2px;
 	// margin-bottom: 10px;
@@ -82,7 +82,7 @@
 	border-color: black;
 }
 
-#name {
+#header-name {
 	margin-right: 10px;
 	text-decoration: none;
 	font-size: 28px;
@@ -108,7 +108,7 @@
 
 	}
 
-	.underline {
+	.header-underline {
 		border-bottom: 6px solid;
 	}
 

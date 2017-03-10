@@ -1,13 +1,13 @@
 
 
 <div id="header">
-	<div id="header-left"><a id="name" href="/">mathieu rolfo</a></div>
+	<div id="header-left"><a id="header-name" href="/">mathieu rolfo</a></div>
 	<div id="header-right">
 		<span><a class="header-link" href="https://www.linkedin.com/in/mathieu-rolfo-555a1563">linkedin</a></span>
 		<span><a class="header-link" href="http://www.github.com/mathieurolfo">github</a></span>
 		
 		{% if page.url == '/projects/' %}
-    		<span><a class="header-link underline" href="/projects">projects</a></span>
+    		<span><a class="header-link header-underline" href="/projects">projects</a></span>
 
 		{% else %}
 			<span><a class="header-link" href="/projects">projects</a></span>
@@ -16,7 +16,7 @@
 		<span><a class="header-link" href="/files/resume.pdf">resume</a></span>
 		
 		{% if page.url == '/random/' %}
-    		<span><a class="header-link underline" href="/random">random</a></span>
+    		<span><a class="header-link header-underline" href="/random">random</a></span>
 
 		{% else %}
 			<span><a class="header-link" href="/random">random</a></span>
