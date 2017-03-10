@@ -4,11 +4,11 @@ window.onload = function() {
 	currentTime = new Date();
 	hours = currentTime.getHours();
 	if (hours < 5 || hours > 17) {
-		document.getElementById("headline").textContent = "Good evening!"
+		document.getElementById("landing-headline").textContent = "Good evening!"
 	} else if (hours < 12) {
-		document.getElementById("headline").textContent = "Good morning!"
+		document.getElementById("landing-headline").textContent = "Good morning!"
 	} else if (hours < 17) {
-		document.getElementById("headline").textContent = "Good afternoon!"
+		document.getElementById("landing-headline").textContent = "Good afternoon!"
 	}
 }
 
