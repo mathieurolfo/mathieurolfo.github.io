@@ -89,16 +89,16 @@ h1 {
 }
 
 
-#width-container {
+#project-video-width-container {
 	width: 80%;
 	margin: auto;
 }
 
-.embed-container { position: relative;  padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+.project-video-embed-container { position: relative;  padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
 
-.embed-container iframe, .embed-container object, .embed-container embed {position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.project-video-embed-container iframe, .project-video-embed-container object, .project-video-embed-container embed {position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-.narrow-box {
+.project-narrow-box {
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
@@ -109,7 +109,8 @@ h1 {
 	max-width: 80%;
 }
 
-/*  SECTIONS  */
+/*  RESONSIVE GRID SECTION  */
+
 .section {
 	clear: both;
 	// padding: 0px;
@@ -160,7 +161,7 @@ h1 {
 		max-width: none;
 		//text-align: left;
 	}
-	.description {
+	.project-description {
 		text-align: left;
 	}
 
@@ -181,13 +182,10 @@ h1 {
 		width: 100%;
 	}
 
-	#brain {
-		width: 70%;
-	}
-	.narrow-box {
+	.project-narrow-box {
 		width: 100%;
 	}
-	#width-container {
+	#project-video-width-container {
 		width: 100%;
 	}
 }

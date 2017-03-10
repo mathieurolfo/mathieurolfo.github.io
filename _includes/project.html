@@ -7,13 +7,13 @@
 			{% endif %}
 		</a>
 		
-		<div class="description">{{include.text}}</div>
+		<div class="project-description">{{include.text}}</div>
 		
 	{% else %}
 		<div class="project-title ">{{include.title}}</div>
 		{% if include.img %}
 		<img class="project-description-image project-img" src="{{site.url}}/files/{{include.img}}">
 		{% endif %}
-		<div class="description">{{include.text}}</div>
+		<div class="project-description">{{include.text}}</div>
 	{% endif %}
 </div>
