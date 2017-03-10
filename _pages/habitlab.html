@@ -6,7 +6,7 @@ permalink: /projects/design/habitlab
 ---
 <div class="container">
 		<div class="projects-header">
-			<h2><a class="reg-link" href="/projects">Projects</a> → <a class="reg-link" href="/projects/design">Design</a> → Habitlab</h2>
+			<h2><a class="shared-reg-link" href="/projects">Projects</a> → <a class="shared-reg-link" href="/projects/design">Design</a> → Habitlab</h2>
 
 			
 			<div class="lead-text">Conducting behavioral change via continual experimentation (at scale)</div>
@@ -50,17 +50,17 @@ permalink: /projects/design/habitlab
 
 
 		<h2>Multi-armed Bandit</h2>
-		<div>To determine which interventions are most effective, we used an approximate solution to the <a class="reg-link" href="https://en.wikipedia.org/wiki/Multi-armed_bandit"> multi-armed bandit problem</a>. The algorithm first approximates your baseline time spent on a site without interventions by a variety of possible methods, then calculates the amount of time spent on a site with a given intervention deployed. The intervention will deployed again in the future as a function of how effective it was, measured by time spent. </div>
+		<div>To determine which interventions are most effective, we used an approximate solution to the <a class="shared-reg-link" href="https://en.wikipedia.org/wiki/Multi-armed_bandit"> multi-armed bandit problem</a>. The algorithm first approximates your baseline time spent on a site without interventions by a variety of possible methods, then calculates the amount of time spent on a site with a given intervention deployed. The intervention will deployed again in the future as a function of how effective it was, measured by time spent. </div>
 
 		<h2> Design Principles</h2>
 		<div>
-		The <b>adaptability to different users</b> of the system is a key design principle. As described by Prof. Robert Cialdini, there are <a class="reg-link" href="https://en.wikipedia.org/wiki/Robert_Cialdini#Six_key_principles_of_influence"> six key principles of persuasion</a> that convince people to take action. However, the relative effectiveness of these principles differs from person to person, with no “optimal” balance among them. As a result, it seems optimal to design for this aspect of human cognition.
+		The <b>adaptability to different users</b> of the system is a key design principle. As described by Prof. Robert Cialdini, there are <a class="shared-reg-link" href="https://en.wikipedia.org/wiki/Robert_Cialdini#Six_key_principles_of_influence"> six key principles of persuasion</a> that convince people to take action. However, the relative effectiveness of these principles differs from person to person, with no “optimal” balance among them. As a result, it seems optimal to design for this aspect of human cognition.
 		</div>
 		<div>Habitlab is also sensitive to <b>constant change</b> within a single user's preferences. From our user testing and preliminary interviews, we learned that people learn to ‘see through’ interventions, just as they ‘see through’ advertisements, and they become less effective. However, the multi-armed bandit continually updates its beliefs about what works and what doesnt, and will rotate out interventions that cease to be effective.</div>
 
 		<div>The design also puts emphasis on <b>goal setting</b> and <b>quantitative feedback</b>. Users are required to set daily time goals to use the extension, and analytics are regularly updated and displayed to the user. The idea behind this draws upon research that goal setting supports behavior change, and that regular feedback is necessary for improvement.</div>
 
-		<div>At the level of individual interventions, the design goal is to <b>empower users to make their time well spent</b>. This draws upon Tristan Harris’ <a class="reg-link" href="http://timewellspent.io">Time Well Spent</a> initiative, and attempts to counteract interfaces that intend to distract and addict you. Some examples of these designs, and our solutions, follow below.</div>
+		<div>At the level of individual interventions, the design goal is to <b>empower users to make their time well spent</b>. This draws upon Tristan Harris’ <a class="shared-reg-link" href="http://timewellspent.io">Time Well Spent</a> initiative, and attempts to counteract interfaces that intend to distract and addict you. Some examples of these designs, and our solutions, follow below.</div>
 
 		<h1>Design and Implementation</h1>
 		<h2>Interventions</h2>

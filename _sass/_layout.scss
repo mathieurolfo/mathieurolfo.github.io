@@ -52,7 +52,7 @@ body {
 
 
 
-.general-venn {
+.shared-venn {
 	display: block;
 	margin: auto;
 	text-align: center;
@@ -71,17 +71,17 @@ svg {
 	pointer-events: all;
 }
 
-.reg-link {
+.shared-reg-link {
 	color: 	$homepage-link-color;
 }
 
-.reg-link:hover {
+.shared-reg-link:hover {
 	cursor: pointer;
 	color: 	$homepage-link-color;
 
 }
 
-.reg-link:visited {
+.shared-reg-link:visited {
 	color: 	$homepage-link-color;
 }
 
