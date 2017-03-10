@@ -1,26 +1,14 @@
-body {
-	font-family: $content-font-family;
-	font-weight: $content-font-weight;	
-	color: $content-color;	 
-	font-size: $small-font-size;
-}
 
 .projects-header {
 	margin-left: 15%;
 	margin-right: 15%;
-	.intro-text {
+	.project-intro-text {
 		font-style: italic;
 	}
 }
 
-.code {
-	.proj-title {
-		font-family: $code-title-font-family;
-	}
-	font-family: $code-title-font-family;
-}
 
-.lead-text {
+.project-lead-text {
 	font-size: 140%;
 	background-color: #ffe4b3;
 }
@@ -182,7 +170,7 @@ h1 {
 		text-align: left;
 	}
 
-	.intro-text {
+	.project-intro-text {
 		text-align: left;
 	}
 
