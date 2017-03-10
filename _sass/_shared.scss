@@ -20,26 +20,6 @@ body {
 	div {
 		margin-bottom: 20px;
 	}
-	.bullet {
-		margin-bottom: 25px;
-		margin-left: 20px;
-		font-style: italic;
-	}
-	.bullet2 {
-		margin-left: 20px;
-		font-style: italic;
-	}
-
-	.month {
-		font-style: normal;
-		margin-right: 8px;
-	}
-
-	.landing-text {
-
-		margin-left: 5%;
-		margin-right: 5%;
-	}
 }
 
 .shared-venn {
@@ -47,14 +27,12 @@ body {
 	margin: auto;
 	text-align: center;
 	padding-top: 10px;
-	// height: 300px;
 	max-width: 400px;
 	width: 60%;
 	font-family: $content-font-family;
 }
 
 svg {
-	// fill: white;
 	color: #222222;
 	font-family: $content-font-family;
 	font-size: 150%;
@@ -94,10 +72,6 @@ svg {
 @media all and (orientation: landscape) {
 	
 }
-
-// @media only screen and (min-device-width: 1000px) {
-// 	body{font-size: 16px;}
-// }
 
 @media only screen and (max-width: $max-width) {
 	
