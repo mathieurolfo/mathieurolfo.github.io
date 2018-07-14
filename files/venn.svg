@@ -3,7 +3,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" onclick="vennClicked(event)" onmousemove="vennMoused(event)" viewBox="0 0 365 340">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" onclick="vennClicked(evt)" onmousemove="vennMoused(evt)" viewBox="0 0 365 340">
 	<defs>
 	  <style type="text/css">@import url(http://fonts.googleapis.com/css?family=Rubik:300);</style>
 	</defs>
